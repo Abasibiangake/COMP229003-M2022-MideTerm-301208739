@@ -36,5 +36,14 @@
     "Passportjs."
   ],
   "author": "Abasibiangake James",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abasibiangake/COMP229003-M2022-MideTerm-301208739.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Abasibiangake/COMP229003-M2022-MideTerm-301208739/issues"
+  },
+  "homepage": "https://github.com/Abasibiangake/COMP229003-M2022-MideTerm-301208739#readme"
 }
