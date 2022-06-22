@@ -45,21 +45,36 @@ module.exports.details = (req, res, next) => {
 
 // Renders the Add form using the add_edit.ejs template
 module.exports.displayAddPage = (req, res, next) => {
-    
-    // ADD YOUR CODE HERE        
+    // ADD YOUR CODE HERE 
+    let newCar = CarModel();
+    res.render('cars/add_edit', {
+        title: "Add a new Car",
+        car: newCar
+        
+    })       
 
 }
 
 // Processes the data submitted from the Add form to create a new car
 module.exports.processAddPage = (req, res, next) => {
-
     // ADD YOUR CODE HERE
+    let newCar = CarModel({
+        _id: req.body.id,
+        make: req.body.make,
+        model: req.body.model,
+        year: req.body.year,
+        kilometers: req.body.kilometers,
+        doors: req.body.doors,
+        seats: req.body.seats,
+        color: req.body.color,
+        price: req.body.price  
+
+    })
 
 }
 
 // Gets a car by id and renders the Edit form using the add_edit.ejs template
 module.exports.displayEditPage = (req, res, next) => {
-    
     // ADD YOUR CODE HERE
 
 }
